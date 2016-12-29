@@ -7,7 +7,8 @@
         <script src="index.js"></script>
 
         <div ng-controller="DateController">
-            Date courante: {{now}}
+            <h2>Current date: {{now}}</h2>
+            <input type="text" ng-model="format" /> <button ng-click="displayDate()">Update Format</button>            
         </div>
     </body>    
 </html>

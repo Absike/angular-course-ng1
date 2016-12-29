@@ -9,8 +9,8 @@ function DateServiceProvider() {
 
     // Our service
     this.$get = function() {
-        function now() {
-            return moment().format(format);
+        function now(userFormat) {
+            return moment().format(userFormat || format); // If userFormat is falsy format is returned
         }
         return {
             now: now
