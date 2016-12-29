@@ -1,0 +1,16 @@
+<html>
+
+<body ng-app="app">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/moment.min.js"></script>
+    <script src="controllers/WeatherController.js"></script>
+    <script src="services/WeatherService.js"></script>
+    <script src="index.js"></script>
+
+    <div ng-controller="WeatherController">
+        <h2>Current Weather: {{weather}}</h2>
+        <input type="text" ng-model="city" /> <button ng-click="displayWeather()">Display Weather</button>
+    </div>
+</body>
+
+</html>
