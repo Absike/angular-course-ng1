@@ -4,5 +4,5 @@ function SettingsController($scope, WeatherService) {
     }
 }
 
-angular.module('controllers', [])
+angular.module('controllers')
     .controller('SettingsController', SettingsController);
