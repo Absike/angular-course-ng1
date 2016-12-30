@@ -1,0 +1,18 @@
+<html>
+
+<body ng-app="app">
+
+    <div ng-controller="MainController">
+        <input ng-model="input" placeholder="100" />
+        <button ng-click="countDownPlease()">Count Down</button>
+        <count-down ng-if="start > 0" start="start" end="endPlease()"></count-down>
+    </div>
+
+    <script src="../lib/angular.min.js"></script>
+    <script src="../lib/angular-route.min.js"></script>
+    <script src="index.js"></script>    
+    <script src="controllers/MainController.js"></script>
+    <script src="directives/countdown/CountDownDirective.js"></script>
+</body>
+
+</html>
